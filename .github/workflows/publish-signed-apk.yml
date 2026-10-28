@@ -1,0 +1,62 @@
+name: Publish signed APK
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Release tag, for example v1.2.0"
+        required: true
+        type: string
+      version_code:
+        description: "Android versionCode baked into this APK"
+        required: true
+        type: string
+      signed_apk_url:
+        description: "HTTPS URL of the already-signed APK. Runners must be able to download it."
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download signed APK
+        env:
+          SIGNED_APK_URL: ${{ inputs.signed_apk_url }}
+          TAG: ${{ inputs.tag }}
+        run: |
+          set -euo pipefail
+          case "$SIGNED_APK_URL" in
+            https://*) ;;
+            *) echo "signed_apk_url must be https" >&2; exit 1 ;;
+          esac
+          case "$TAG" in
+            v[0-9]*) ;;
+            *) echo "tag must look like v1.2.0" >&2; exit 1 ;;
+          esac
+          apk="av-downloader-${TAG}.apk"
+          curl -fL --retry 3 --retry-delay 2 -o "$apk" "$SIGNED_APK_URL"
+          kind="$(file "$apk")"
+          echo "$kind"
+          echo "$kind" | grep -Eqi 'zip|android|dalvik|java archive' || {
+            echo "Downloaded file does not look like an APK" >&2
+            exit 1
+          }
+          echo "APK_NAME=$apk" >> "$GITHUB_ENV"
+
+      - name: Create or update the GitHub release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TAG: ${{ inputs.tag }}
+          VERSION_CODE: ${{ inputs.version_code }}
+        run: |
+          set -euo pipefail
+          notes="$(printf 'versionCode: %s\n\nSigned APK published manually. No source is stored in this repo.\n' "$VERSION_CODE")"
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            gh release upload "$TAG" "$APK_NAME" --clobber
+          else
+            gh release create "$TAG" "$APK_NAME" --title "$TAG" --notes "$notes"
+          fi
