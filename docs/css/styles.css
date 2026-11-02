@@ -3,7 +3,7 @@
 * Based on Start Bootstrap - New Age v6.0.7 (https://startbootstrap.com/theme/new-age)
 * Copyright 2013-2023 Start Bootstrap
 * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-new-age/blob/master/LICENSE)
-* Colours, fonts and phone frame customised for AV Downloader.
+* Colours (dark theme), fonts and phone frame customised for AV Downloader.
 */
 /*!
  * Bootstrap  v5.2.3 (https://getbootstrap.com/)
@@ -11197,4 +11197,179 @@ footer a:hover, footer a:active, footer a:focus {
   .masthead .masthead-device-mockup .device-wrapper {
     max-width: 17rem;
   }
+}
+
+html {
+  background: #07070c;
+  color-scheme: dark;
+}
+
+body {
+  background: #07070c;
+  color: #ece9f7;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  color: #fff;
+}
+
+.text-muted {
+  color: #b3adc9 !important;
+}
+
+.text-white-50 {
+  color: rgba(255, 255, 255, 0.72) !important;
+}
+
+a, .link-primary {
+  color: #c4b5ff !important;
+}
+
+a:hover, .link-primary:hover {
+  color: #fff !important;
+}
+
+a.btn {
+  color: #fff !important;
+}
+
+hr {
+  border-color: rgba(255, 255, 255, 0.18);
+  opacity: 1;
+}
+
+::selection {
+  background: rgba(232, 62, 140, 0.45);
+  color: #fff;
+}
+
+#mainNav {
+  background-color: rgba(10, 8, 20, 0.82) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.45) !important;
+}
+#mainNav .navbar-brand, #mainNav .navbar-brand:hover {
+  color: #fff !important;
+}
+#mainNav .navbar-toggler {
+  color: #ece9f7;
+  border-color: rgba(255, 255, 255, 0.25);
+}
+#mainNav .navbar-nav .nav-item .nav-link {
+  color: #b3adc9 !important;
+}
+#mainNav .navbar-nav .nav-item .nav-link:hover, #mainNav .navbar-nav .nav-item .nav-link.active {
+  color: #fff !important;
+}
+
+.masthead {
+  background: radial-gradient(60rem 40rem at 85% 30%, rgba(109, 74, 255, 0.28), transparent 60%), radial-gradient(40rem 30rem at 10% 90%, rgba(232, 62, 140, 0.16), transparent 60%), linear-gradient(160deg, #07070c 0%, #1a1033 60%, #2a0f2e 100%) !important;
+}
+.masthead .masthead-device-mockup .circle {
+  opacity: 0.5;
+  filter: blur(18px);
+}
+.masthead .masthead-device-mockup .shape-1, .masthead .masthead-device-mockup .shape-2 {
+  fill: #e83e8c;
+}
+
+.section-promise {
+  padding: 5rem 0;
+  background: radial-gradient(50rem 18rem at 50% 0%, rgba(232, 62, 140, 0.22), transparent 70%), linear-gradient(90deg, #160c2c 0%, #2a0f2e 50%, #2b1410 100%);
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+#features {
+  background: radial-gradient(45rem 30rem at 0% 20%, rgba(109, 74, 255, 0.14), transparent 60%), radial-gradient(45rem 30rem at 100% 80%, rgba(255, 154, 61, 0.08), transparent 60%), #0d0b18;
+}
+
+.feature-card {
+  background: linear-gradient(160deg, rgba(36, 26, 66, 0.85), rgba(18, 13, 32, 0.92)) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0.75rem 2rem rgba(0, 0, 0, 0.45) !important;
+}
+.feature-card:hover {
+  border-color: rgba(232, 62, 140, 0.45);
+  box-shadow: 0 1.25rem 2.5rem rgba(109, 74, 255, 0.25) !important;
+}
+
+.privacy-strip {
+  background: radial-gradient(40rem 25rem at 90% 50%, rgba(255, 122, 69, 0.12), transparent 60%), linear-gradient(135deg, #0a0812 0%, #1b0f2a 100%) !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.section-screens {
+  background: radial-gradient(60rem 30rem at 50% 55%, rgba(109, 74, 255, 0.2), transparent 65%), linear-gradient(180deg, #0d0b18 0%, #1a1033 100%);
+}
+
+.shot-caption {
+  color: #fff;
+}
+
+.section-download {
+  background: radial-gradient(40rem 20rem at 50% 100%, rgba(255, 122, 69, 0.22), transparent 70%), radial-gradient(40rem 22rem at 50% 0%, rgba(109, 74, 255, 0.25), transparent 70%), linear-gradient(160deg, #1a1033 0%, #2a0f2e 100%);
+}
+
+.site-footer {
+  background: linear-gradient(180deg, #0a0812 0%, #07070c 100%);
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.page-hero {
+  background: radial-gradient(45rem 20rem at 80% 0%, rgba(232, 62, 140, 0.22), transparent 65%), radial-gradient(40rem 20rem at 0% 100%, rgba(109, 74, 255, 0.25), transparent 65%), linear-gradient(150deg, #07070c 0%, #1a1033 65%, #2a0f2e 100%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.legal-main {
+  background: radial-gradient(50rem 30rem at 100% 0%, rgba(109, 74, 255, 0.1), transparent 60%), #0d0b18;
+}
+
+.legal {
+  color: #ece9f7;
+}
+
+.legal h2, .legal .h2 {
+  background: linear-gradient(90deg, #b9a6ff, #ff8fc0 60%, #ffb27a);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.legal strong {
+  color: #fff;
+}
+
+.btn-outline-light {
+  border-color: rgba(255, 255, 255, 0.45);
+}
+.btn-outline-light:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: #fff;
+}
+
+.btn-primary {
+  box-shadow: 0 0.5rem 1.75rem rgba(232, 62, 140, 0.35);
+}
+
+.phone {
+  background: linear-gradient(160deg, #34343f, #111116) !important;
+  box-shadow: 0 0 0 2px #4a4a58 inset, 0 0 0 1px rgba(255, 255, 255, 0.06), 0 1.5rem 3rem rgba(0, 0, 0, 0.6), 0 0 3.5rem rgba(124, 77, 255, 0.45), 0 0 6rem rgba(232, 62, 140, 0.22) !important;
+}
+
+.btn-ghost {
+  color: #fff !important;
+  border: 1px solid transparent;
+  background: linear-gradient(rgba(16, 12, 30, 0.92), rgba(16, 12, 30, 0.92)) padding-box, linear-gradient(135deg, #6d4aff, #e83e8c 55%, #ff9a3d) border-box;
+}
+.btn-ghost i {
+  color: #ff9a3d;
+}
+.btn-ghost:hover, .btn-ghost:focus {
+  color: #fff !important;
+  background: linear-gradient(rgba(42, 22, 60, 0.95), rgba(42, 22, 60, 0.95)) padding-box, linear-gradient(135deg, #6d4aff, #e83e8c 55%, #ff9a3d) border-box;
+  box-shadow: 0 0 1.5rem rgba(232, 62, 140, 0.35);
 }
