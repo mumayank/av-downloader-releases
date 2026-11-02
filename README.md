@@ -41,3 +41,8 @@ The installed app updates when the remote version name is newer, or when the nam
 2. **Manual workflow in this repo.** Actions → **Publish signed APK** → supply the tag, the versionCode, and an HTTPS URL of a signed APK that GitHub-hosted runners can download. The workflow creates the release and attaches the file. It does not build or sign anything.
 
 Do not commit APKs or source to the default branch.
+
+## Website and privacy
+
+- Website: https://mumayank.github.io/av-downloader-releases/ (source in [`docs/`](docs/), served by GitHub Pages)
+- Privacy policy: [privacy.md](privacy.md), also at https://mumayank.github.io/av-downloader-releases/privacy.html
