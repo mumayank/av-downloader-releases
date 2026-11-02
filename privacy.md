@@ -35,7 +35,7 @@ The app only goes online to do something you asked for, or to keep itself workin
 - **The site behind the link you copied.** To fetch that post or video, plus its images, thumbnail, title, description and top comment. Some pages are opened in a hidden, in-app browser window, which loads what that page normally loads, minus the ads and trackers the filter lists catch.
 - **GitHub**, to check this project's public releases for app updates (no account or token involved), and to check for and download updates to the open-source download engine built into the app.
 - **Public ad-block filter lists**, downloaded so the app can strip ads from the pages it reads.
-- **A public, community-run database of sponsor segments**, so sponsor and self-promo parts can be cut out of videos.
+- **A free community database of sponsor segments**, so sponsor, self-promo and "like and subscribe" parts can be skipped in videos where the community has marked them. Videos nobody has marked are left as they are. The app sends it only the first few characters of a scrambled (hashed) version of the video's ID, not the ID itself, so the database can't tell exactly which video you saved.
 
 Like any internet request, these services can see your phone's IP address and what was requested. That's between your phone and them, under their own privacy policies. We never get a copy of any of it.
 
