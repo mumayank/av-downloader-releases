@@ -47,10 +47,10 @@ If you do sign in:
 
 - You type your password into **the site's own sign-in page**, shown inside the app. The app never sees or stores your password.
 - The site gives the app the same login cookies a browser would get. These stay **only on your phone**: in the in-app browser's storage and in an encrypted copy (Android's encrypted storage). App backups are turned off, so they aren't copied into cloud backups.
-- They're only ever sent back **to that same site**, to fetch the content you asked for. They're never sent to us or to anyone else, and their values are never written to logs.
+- They're only ever sent back **to that same site**, to fetch the content you asked for. They're never sent to us or to anyone else. Nothing about the cookies themselves is written to logs; the app's own on-phone log only notes which site's sign-in a download used.
 - While a download runs, a temporary copy is written to the app's private cache for the download engine and deleted when that download ends.
 
-To remove a sign-in completely, use Android's **Settings > Apps > AV Downloader > Storage > Clear storage** (or uninstall the app). Long-pressing a sign-in button lets you sign in again with a different account.
+To sign out, long-press that site's signed-in button and tap **Sign out**. This deletes everything the app kept for that site: the encrypted copy, its cookies and storage in the in-app browser, and any temporary cookie files. If you're signed in to the other site too, that one stays signed in. Uninstalling the app also removes everything.
 
 ## Chat apps
 
@@ -63,7 +63,6 @@ Sharing uses Android's normal share feature. The app never signs in to, reads, o
 - **Notifications.** To show download progress quietly.
 - **Unrestricted battery.** So downloads can finish while your screen is off.
 - **Install unknown apps.** So the app can install its own updates. Android always asks you to confirm.
-- **All files access** (on newer Android versions). The setup screen still asks for this from an older version that saved to the public Download folder. Current versions keep downloads in the app's own folder and don't use it, so you can leave it off.
 - **Internet.** For the connections listed above.
 
 ## Children
