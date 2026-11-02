@@ -58,7 +58,7 @@
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-  --bs-body-font-family: Mulish, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  --bs-body-font-family: Nunito, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 500;
   --bs-body-line-height: 1.5;
@@ -116,7 +116,7 @@ hr {
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
-  font-family: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 600;
   line-height: 1.2;
 }
@@ -6304,7 +6304,7 @@ html {
 }
 
 .font-alt {
-  font-family: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+  font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
 }
 
 .text-gradient {
@@ -6325,15 +6325,9 @@ section {
 }
 
 @font-face {
-  font-family: "Mulish";
-  src: url("../assets/fonts/Mulish.woff2") format("woff2");
+  font-family: "Nunito";
+  src: url("../assets/fonts/Nunito.woff2") format("woff2");
   font-weight: 200 1000;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Plus Jakarta Sans";
-  src: url("../assets/fonts/PlusJakartaSans.woff2") format("woff2");
-  font-weight: 200 800;
   font-display: swap;
 }
 .bg-gradient-primary-to-secondary {
@@ -6955,7 +6949,7 @@ hr {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: 700;
   color: #fff !important;
   text-decoration: none;
@@ -6970,4 +6964,271 @@ hr {
 }
 .back-home:hover {
   color: #c4b5ff !important;
+}
+
+html {
+  background: #0b0710;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  background: linear-gradient(rgba(8, 6, 14, 0.45), rgba(8, 6, 14, 0.45)), linear-gradient(135deg, #ff0000 0%, #ff4500 30%, #25d366 66%, #229ed9 100%);
+  min-height: 100vh;
+  color: #fff;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .display-1, .display-3, .display-4, .display-5 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 900;
+  letter-spacing: -0.01em;
+}
+
+.text-muted {
+  color: rgba(255, 255, 255, 0.86) !important;
+}
+
+.text-white-50 {
+  color: rgba(255, 255, 255, 0.86) !important;
+}
+
+a, .link-primary {
+  color: #fff !important;
+}
+
+a:hover, .link-primary:hover {
+  color: #ffe9a8 !important;
+}
+
+.masthead, #features, .section-screens, .section-compact, .site-footer, .page-hero, .legal-main {
+  background: transparent !important;
+  border: 0 !important;
+}
+
+.btn-primary {
+  background: #fff !important;
+  color: #14101c !important;
+  border: 0;
+  font-weight: 800;
+  box-shadow: 0 0.6rem 1.8rem rgba(0, 0, 0, 0.35);
+}
+.btn-primary:hover, .btn-primary:focus {
+  background: #fff4d6 !important;
+  color: #14101c !important;
+  filter: none;
+}
+
+a.btn-primary {
+  color: #14101c !important;
+}
+
+.btn-outline-support {
+  color: #fff !important;
+  border: 2px solid rgba(255, 255, 255, 0.85);
+  background: transparent;
+  font-weight: 800;
+}
+.btn-outline-support:hover, .btn-outline-support:focus {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: #fff;
+}
+.btn-outline-support i {
+  color: #ff8a8a;
+}
+
+.hero-v3 {
+  padding: 3.25rem 0 2rem;
+}
+
+@media (max-width: 991.98px) {
+  .hero-v3 {
+    padding: 2.5rem 0 1.25rem;
+  }
+}
+.hero-v3 h1, .hero-v3 .h1 {
+  font-size: clamp(2.6rem, 1.6rem + 4vw, 4.6rem);
+  line-height: 1;
+  margin-bottom: 0.75rem;
+}
+
+.hero-v3 .tagline {
+  font-size: clamp(1.25rem, 1rem + 1vw, 1.75rem);
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+}
+
+.hero-v3 .fine {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.86);
+  margin-top: 0.9rem;
+}
+
+.hero-mascot {
+  width: 4.5rem;
+  height: 4.5rem;
+  margin-bottom: 0.5rem;
+  filter: drop-shadow(0 0.5rem 1rem rgba(0, 0, 0, 0.35));
+}
+
+.hero-art {
+  position: relative;
+  max-width: 15rem;
+  margin: 0 auto;
+}
+
+.hero-art .phone {
+  filter: none;
+}
+
+.hero-art .pet {
+  position: absolute;
+  width: 5.5rem;
+  height: 5.5rem;
+  filter: drop-shadow(0 0.6rem 1.2rem rgba(0, 0, 0, 0.4));
+}
+.hero-art .pet.pet-a {
+  left: -3.75rem;
+  bottom: 2.5rem;
+  transform: rotate(-8deg);
+}
+.hero-art .pet.pet-b {
+  right: -3.25rem;
+  top: 2rem;
+  width: 4.5rem;
+  height: 4.5rem;
+  transform: rotate(10deg);
+}
+
+.phone {
+  box-shadow: 0 0 0 2px #4a4a58 inset, 0 1.5rem 3rem rgba(0, 0, 0, 0.55), 0 0 3rem rgba(255, 255, 255, 0.18) !important;
+}
+
+.section-compact {
+  padding: 2.25rem 0;
+}
+
+.section-title {
+  font-weight: 900;
+}
+
+.pet-tile {
+  height: 100%;
+  text-align: center;
+  padding: 1.1rem 0.75rem 1rem;
+  border-radius: 1.25rem;
+  background: rgba(10, 8, 18, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+.pet-tile:hover {
+  transform: translateY(-3px) rotate(-0.5deg);
+  background: rgba(10, 8, 18, 0.62);
+}
+.pet-tile img {
+  width: 4rem;
+  height: 4rem;
+  margin-bottom: 0.5rem;
+}
+.pet-tile h3, .pet-tile .h3 {
+  font-size: 1.1rem;
+  font-weight: 900;
+  margin: 0;
+}
+
+@media (max-width: 575.98px) {
+  .pet-tile img {
+    width: 3.25rem;
+    height: 3.25rem;
+  }
+  .pet-tile h3, .pet-tile .h3 {
+    font-size: 1rem;
+  }
+}
+.one-liner {
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.shot-strip figcaption {
+  font-weight: 800;
+  font-size: 1rem;
+}
+
+.support-row {
+  padding: 1.5rem 0 0.75rem;
+  text-align: center;
+}
+
+.support-row img {
+  width: 3.5rem;
+  height: 3.5rem;
+  display: block;
+  margin: 0 auto 0.6rem;
+}
+
+.site-footer.tiny {
+  padding: 0.75rem 0 1.5rem !important;
+  font-size: 0.68rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.site-footer.tiny .footer-links {
+  font-size: 0.72rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+
+.site-footer.tiny a {
+  color: #fff !important;
+}
+
+.page-hero-v3 {
+  padding: 2.25rem 0 1rem;
+}
+
+.page-hero-v3 .owl {
+  width: 4.5rem;
+  height: 4.5rem;
+  float: right;
+  margin-left: 1rem;
+  filter: drop-shadow(0 0.5rem 1rem rgba(0, 0, 0, 0.35));
+}
+
+.legal-card {
+  background: rgba(10, 8, 18, 0.62);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 1.5rem;
+  padding: 2rem 2.25rem;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+@media (max-width: 575.98px) {
+  .legal-card {
+    padding: 1.25rem 1.1rem;
+    border-radius: 1.1rem;
+  }
+}
+.legal h2, .legal .h2 {
+  background: none !important;
+  -webkit-text-fill-color: #fff !important;
+  color: #fff;
+  font-size: 1.35rem;
+  margin-top: 2rem;
+}
+
+.legal {
+  color: #fff;
+}
+
+.back-home {
+  font-family: "Nunito", sans-serif !important;
+  font-weight: 900 !important;
+  margin-bottom: 1.25rem !important;
+}
+.back-home .bi-arrow-left {
+  color: #fff !important;
 }
