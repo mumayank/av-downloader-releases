@@ -594,7 +594,7 @@ progress {
   color: #6c757d;
 }
 .blockquote-footer::before {
-  content: "— ";
+  content: "- ";
 }
 
 .img-fluid {
@@ -7231,4 +7231,28 @@ a.btn-primary {
 }
 .back-home .bi-arrow-left {
   color: #fff !important;
+}
+
+/* Homepage refresh: short supporting copy under the hero and inside feature tiles. */
+.hero-v3 .hero-sub {
+  max-width: 38rem;
+  margin: 0 0 1.5rem;
+  font-size: 1.02rem;
+  font-weight: 600;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.84);
+}
+
+.pet-tile p {
+  margin: 0.4rem 0 0;
+  font-size: 0.82rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.74);
+}
+
+@media (max-width: 575.98px) {
+  .pet-tile p {
+    font-size: 0.76rem;
+  }
 }

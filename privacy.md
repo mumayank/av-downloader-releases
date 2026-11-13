@@ -1,6 +1,6 @@
 # AV Downloader privacy policy
 
-**Last updated: 2 November 2026**
+**Last updated: 13 November 2026**
 
 Here's the short version: **AV Downloader doesn't collect anything about you.** There's no account, no analytics, no ads, no crash reporting and no server. We never see what you download, what you share, or who you are.
 
@@ -24,33 +24,39 @@ The app contains no analytics, advertising, tracking or crash-reporting code or 
 
 ## Where your downloads go
 
-Everything you download is saved in the app's own private folder on your phone. Other apps can't browse that folder. When you share something, Android hands only that file to the app you pick.
+Downloads go to the public **Downloads/AVDownloader** folder when Android lets the app write there. If it can't, the app writes to its own private storage and copies the finished file into Downloads/AVDownloader through Android's media store. Files in the public Downloads folder can be seen by other apps and by you in a file manager. Nothing is uploaded to us.
 
-Old downloads are cleaned up automatically: the first time you share something on a new day, the app clears out older downloads. It keeps the one you're sharing, anything still downloading or waiting to be shared, and anything from the last couple of hours. You can also clear them any time with the **Clean up** button, and uninstalling the app removes everything.
+There is no automatic daily cleanup. The app keeps downloads until you tap **Delete** in the **Data used** row on the main screen. Uninstalling the app removes its private files; files already saved in Downloads/AVDownloader stay there until you delete them.
 
 ## What the app connects to, and why
 
 The app only goes online to do something you asked for, or to keep itself working:
 
-- **The site behind the link you copied.** To fetch that post or video, plus its images, thumbnail, title, description and top comment. Some pages are opened in a hidden, in-app browser window, which loads what that page normally loads, minus the ads and trackers the filter lists catch.
+- **The site behind the link you copied.** This can be YouTube, Reddit, or any other web link. The app fetches the media, plus the title, description, images, thumbnail and up to three top comments. For articles, it opens the page in a hidden, in-app browser with the ad blocker and a reader view, so it can read the article and capture a stripped page image. Some pages load what they normally load, minus the ads and trackers the filter lists catch.
 - **GitHub**, to check this project's public releases for app updates (no account or token involved), and to check for and download updates to the open-source download engine built into the app.
 - **Public ad-block filter lists**, downloaded so the app can strip ads from the pages it reads.
 - **A free community database of sponsor segments**, so sponsor, self-promo and "like and subscribe" parts can be skipped in videos where the community has marked them. Videos nobody has marked are left as they are. The app sends it only the first few characters of a scrambled (hashed) version of the video's ID, not the ID itself, so the database can't tell exactly which video you saved.
+- **A site where you choose to sign in**, only when that site blocks a download. See the next section.
 
 Like any internet request, these services can see your phone's IP address and what was requested. That's between your phone and them, under their own privacy policies. We never get a copy of any of it.
 
-## Optional sign-in (please read this one)
+## Sign in only when a site needs it
 
-The app has **optional** sign-in buttons for the supported video and community sites. You never have to use them. The first time you share a link from the community site, the app offers its sign-in page once, and you can just skip it. Without signing in, most things still work, but some content (for example age-restricted, members-only or login-only posts) may not download.
+There are no permanent sign-in buttons. When a download is blocked by a site that needs a session, the app shows a red attention bubble. Tapping it opens a sign-in card about 70% of the screen, centered, with a toolbar, a short explanation and a close button. The card loads the site's own sign-in page.
 
-If you do sign in:
+If you sign in:
 
-- You type your password into **the site's own sign-in page**, shown inside the app. The app never sees or stores your password.
+- You type your password into **the site's own sign-in page**. The app never sees or stores your password.
 - The site gives the app the same login cookies a browser would get. These stay **only on your phone**: in the in-app browser's storage and in an encrypted copy (Android's encrypted storage). App backups are turned off, so they aren't copied into cloud backups.
-- They're only ever sent back **to that same site**, to fetch the content you asked for. They're never sent to us or to anyone else. Nothing about the cookies themselves is written to logs; the app's own on-phone log only notes which site's sign-in a download used.
-- While a download runs, a temporary copy is written to the app's private cache for the download engine and deleted when that download ends.
+- The app keeps that session until you sign out. It survives app updates. The site may still expire it on its side.
+- The app also keeps a small local record for the **Logged in websites** screen: the site name, when you signed in, and when the session was last used for a download. It never shows media titles, links or thumbnails there. This record is kept in the app's encrypted storage.
+- The session is only ever sent back **to that same site**, to fetch the content you asked for. It's never sent to us or to anyone else. Nothing about the cookies themselves is written to logs; the app's on-phone diagnostics only note site names and whether a session was used.
+- While a download runs, a temporary cookie file is written to the app's private cache for the download engine and deleted when that download ends.
+- The same rules apply to any site that asks for a session, not just YouTube and Reddit.
 
-To sign out, long-press that site's signed-in button and tap **Sign out**. This deletes everything the app kept for that site: the encrypted copy, its cookies and storage in the in-app browser, and any temporary cookie files. If you're signed in to the other site too, that one stays signed in. Uninstalling the app also removes everything.
+If you close the card without signing in, the app does not remember that as a failure. The next matching link can ask again.
+
+To sign out, open the overflow menu, tap **Sign out of logged in websites**, pick the site and tap **Sign out**. This deletes everything the app kept for that site: the encrypted copy, its cookies and storage in the in-app browser, its local record and any temporary cookie files. Other sites stay signed in. Uninstalling the app also removes everything.
 
 ## Chat apps
 
@@ -59,8 +65,8 @@ Sharing uses Android's normal share feature. The app never signs in to, reads, o
 ## Permissions, explained simply
 
 - **Accessibility.** This is how the app notices you tapped "Copy link" (or saw a "Link copied" message) in another app, so it can show the bubble. Android lets an accessibility service see on-screen events from all apps; this one only looks for that copy-link moment, then reads the copied link. It doesn't record what you type or read, and nothing it sees leaves your phone. A short "detection log" of why the bubble did or didn't appear (app and site names, never your clipboard text) is kept on your phone so you can troubleshoot it.
-- **Display over other apps.** For the bubble, the progress rings and the share card.
-- **Notifications.** To show download progress quietly.
+- **Display over other apps.** For the floating bubble and the progress rings. The sign-in card and the Share all screen are normal in-app screens, not overlays.
+- **Notifications.** To show download progress quietly, and to offer a sign-in action when a download is waiting for one.
 - **Unrestricted battery.** So downloads can finish while your screen is off.
 - **Install unknown apps.** So the app can install its own updates. Android always asks you to confirm.
 - **Internet.** For the connections listed above.
