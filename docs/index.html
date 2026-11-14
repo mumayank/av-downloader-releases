@@ -1,83 +1,499 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <title>AV Downloader: any link, one tap, a clean share</title>
-        <meta name="description" content="Copy any link. Tap the bubble. Download media or a clean reader view, then share it anywhere. No ads. No tracking." />
-        <meta name="theme-color" content="#3a0d10" />
-        <meta property="og:title" content="AV Downloader" />
-        <meta property="og:description" content="Copy any link, tap the bubble, share it anywhere. Media first, then a clean summary with the title, top comments and a stripped page capture. No ads, no tracking, no data collection." />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="assets/img/icon-192.png" />
-        <link rel="icon" type="image/png" href="assets/img/favicon.png" />
-        <link href="assets/icons/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Theme: Start Bootstrap "New Age" (MIT), customised. Everything is self-hosted: this page loads nothing from third parties. -->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body id="page-top">
-        <!-- Hero-->
-        <header class="hero-v3">
-            <div class="container px-4 px-lg-5">
-                <div class="row gx-5 align-items-center">
-                    <div class="col-lg-7 text-center text-lg-start">
-                        <img class="hero-mascot d-lg-none" src="assets/img/animals/cat_face.svg" alt="" />
-                        <h1>AV Downloader</h1>
-                        <p class="tagline">Copy any link. Tap the bubble. Done.</p>
-                        <p class="hero-sub">YouTube, Reddit, or any webpage. The app grabs the media first, then builds a clean summary with the title, description, top comments and a stripped page capture. Sign in only when a site blocks the download.</p>
-                        <a class="btn btn-primary btn-lg rounded-pill px-4 py-3 text-nowrap" href="https://github.com/mumayank/av-downloader-releases/releases/latest"><i class="bi-download me-2"></i>Download for Android</a>
-                        <p class="fine mb-0">Free &middot; Android 8+ &middot; Any link &middot; No ads &middot; Zero tracking</p>
-                    </div>
-                    <div class="col-lg-5 d-none d-lg-block">
-                        <div class="hero-art">
-                            <div class="phone"><div class="screen"><img src="assets/img/screens/share-all.png" alt="The Share all preview with the title, image, red stop, primary fast-forward and large share button" /></div></div>
-                            <img class="pet pet-a" src="assets/img/animals/penguin.svg" alt="" />
-                            <img class="pet pet-b" src="assets/img/animals/cat_face.svg" alt="" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <!-- Features-->
-        <section class="section-compact" id="features">
-            <div class="container px-4 px-lg-5">
-                <h2 class="section-title text-center mb-4">Still stupid simple.</h2>
-                <div class="row g-3 g-lg-4">
-                    <div class="col-6 col-lg-4"><div class="pet-tile"><img src="assets/img/animals/fox.svg" alt="" /><h3>Any link</h3><p>YouTube, Reddit, or a news article.</p></div></div>
-                    <div class="col-6 col-lg-4"><div class="pet-tile"><img src="assets/img/animals/owl.svg" alt="" /><h3>Reader view</h3><p>Ads and sidebars stripped. Title, hero and top 3 comments.</p></div></div>
-                    <div class="col-6 col-lg-4"><div class="pet-tile"><img src="assets/img/animals/rabbit_face.svg" alt="" /><h3>Sign in only when needed</h3><p>A 70% card appears only if a site blocks the download.</p></div></div>
-                    <div class="col-6 col-lg-4"><div class="pet-tile"><img src="assets/img/animals/octopus.svg" alt="" /><h3>Share all</h3><p>One by one, flat pager, red stop and fast-forward.</p></div></div>
-                    <div class="col-6 col-lg-4"><div class="pet-tile"><img src="assets/img/animals/sloth.svg" alt="" /><h3>Skips sponsors</h3><p>SponsorBlock where the community marked it.</p></div></div>
-                    <div class="col-6 col-lg-4"><div class="pet-tile"><img src="assets/img/animals/panda.svg" alt="" /><h3>Zero tracking</h3><p>No account, no analytics, no ads.</p></div></div>
-                </div>
-                <p class="one-liner text-center mt-4 mb-0">Latest: any link, reader view, challenge-only sign-in, saved sessions, a rebuilt Share all and a copy-link countdown.</p>
-                <p class="one-liner text-center mt-2 mb-0">Nothing collected. Nothing sold. <a href="privacy.html">Privacy policy</a></p>
-            </div>
-        </section>
-        <!-- Screens-->
-        <section class="section-compact section-screens" id="screens">
-            <div class="container px-4 px-lg-5">
-                <h2 class="section-title text-center mb-4">See it</h2>
-                <div class="shot-strip">
-                    <figure class="mini-shot"><div class="phone"><div class="screen"><img src="assets/img/screens/main.png" alt="The main screen with the dark red Delete row, dark blue Share all row and refresh beside the title" /></div></div><figcaption>Home</figcaption></figure>
-                    <figure class="mini-shot"><div class="phone"><div class="screen"><img src="assets/img/screens/sign-in.png" alt="The 70 percent sign-in card with a toolbar, short rationale and close button" /></div></div><figcaption>Sign in only if asked</figcaption></figure>
-                    <figure class="mini-shot"><div class="phone"><div class="screen"><img src="assets/img/screens/share-all.png" alt="The Share all preview with the image, title, metadata, red stop, primary fast-forward and large share button" /></div></div><figcaption>Share all</figcaption></figure>
-                    <figure class="mini-shot"><div class="phone"><div class="screen"><img src="assets/img/screens/sites.png" alt="The Logged in websites screen with site names, sign-in dates, last-used dates and per-site sign-out" /></div></div><figcaption>Sessions</figcaption></figure>
-                </div>
-            </div>
-        </section>
-        <!-- Support-->
-        <div class="support-row">
-            <img src="assets/img/animals/koala.svg" alt="" />
-            <a class="btn btn-outline-support rounded-pill px-4 py-2" href="https://github.com/sponsors/mumayankteam" target="_blank" rel="noopener"><i class="bi-heart-fill me-2"></i>Support the dev</a>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AV Downloader - Copy a link. Tap the bubble. It is in Telegram.</title>
+  <meta name="description" content="A personal Android tool that downloads media and reader-view pages from a copied link, then hands them to Telegram or WhatsApp. No Play Store, no tracking.">
+  <meta name="theme-color" content="#F3EEE2">
+  <meta property="og:title" content="AV Downloader - Copy a link. Tap the bubble. It is in Telegram.">
+  <meta property="og:description" content="A personal Android tool that downloads media and reader-view pages from a copied link, then hands them to Telegram or WhatsApp. No Play Store, no tracking.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mumayank.github.io/av-downloader-releases/">
+  <meta property="og:image" content="https://mumayank.github.io/av-downloader-releases/assets/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://mumayank.github.io/av-downloader-releases/assets/og.png">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="preload" href="assets/fonts/bricolage-grotesque.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/instrument-sans.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/img/hero-front.webp" as="image" type="image/webp">
+  <link rel="stylesheet" href="styles.css?v=1">
+  <script>
+    (function () {
+      document.documentElement.classList.add('js');
+      try {
+        var stored = localStorage.getItem('showcase-theme');
+        var theme = stored || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+        document.querySelector('meta[name="theme-color"]').setAttribute('content', theme === 'dark' ? '#07131F' : '#F3EEE2');
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to the good part</a>
+
+  <header class="nav">
+    <div class="wrap nav__inner">
+      <a class="brand" href="#top" aria-label="AV Downloader home">
+        <span class="brand__mark"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-download-simple"></use></svg></span>
+        <span class="brand__name">AV Downloader</span>
+      </a>
+
+      <nav class="nav__links" aria-label="Sections">
+        <a href="#feature-a">The app</a>
+        <a href="#feature-b">The flow</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+
+      <div class="nav__actions">
+        <button class="theme" id="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+          <svg class="icon theme__sun" aria-hidden="true"><use href="assets/icons.svg#i-sun"></use></svg>
+          <svg class="icon theme__moon" aria-hidden="true"><use href="assets/icons.svg#i-moon"></use></svg>
+        </button>
+        <a class="btn btn--install btn--nav" href="https://github.com/mumayank/av-downloader-releases/releases/latest">
+          <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-download-simple"></use></svg>
+          Install now
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" id="top">
+      <div class="wrap hero__inner">
+        <div class="hero__copy">
+          <p class="eyebrow"><span class="dot" aria-hidden="true"></span> Copy a link. Tap the bubble. It is in Telegram.</p>
+          <h1>Copy a <span class="circled">link</span>.<br>Tap the <span class="mark">bubble</span>.</h1>
+          <p class="hero__sub">A personal Android tool that fetches the media, or a stripped reader-view page, then hands it to Telegram or WhatsApp.</p>
+          <div class="hero__cta">
+            <a class="btn btn--install" href="https://github.com/mumayank/av-downloader-releases/releases/latest">
+              <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-download-simple"></use></svg>
+              Install now
+            </a>
+            <a class="arrow-link" href="#feature-a">See it work <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-arrow-down"></use></svg></a>
+          </div>
         </div>
-        <!-- Footer-->
-        <footer class="site-footer tiny text-center">
-            <div class="container px-4">
-                <nav class="footer-links"><a href="privacy.html">Privacy</a><span>&middot;</span><a href="https://github.com/mumayank/av-downloader-releases/releases">Releases</a><span>&middot;</span><a href="https://github.com/mumayank/av-downloader-releases/issues">Report an issue</a></nav>
-                <div>&copy; 2026 AV Downloader &middot; Not affiliated with any app &middot; Save only what you're allowed to.</div>
-                <div>Theme: <a href="https://startbootstrap.com/theme/new-age">New Age</a> by Start Bootstrap (<a href="LICENSE-template.txt">MIT</a>) &middot; Animals: Fluent Emoji (<a href="assets/img/animals/LICENSE.txt">MIT</a>) &middot; Font: Nunito (<a href="assets/fonts/OFL-Nunito.txt">OFL</a>)</div>
+
+        <div class="hero__visual" aria-label="AV Downloader screens">
+          <div class="hero__phone hero__phone--back">
+            <div class="phone">
+              <div class="phone__screen">
+                <img src="assets/img/hero-back.webp" width="760" height="1647" alt="The Share all preview for post 2 of 3, with a square thumbnail, the post title, its clean redd.it link and Cancel, Next and Share buttons." fetchpriority="low">
+              </div>
             </div>
-        </footer>
-    </body>
+          </div>
+
+          <div class="hero__phone hero__phone--front">
+            <div class="phone">
+              <div class="phone__screen">
+                <img src="assets/img/hero-front.webp" width="900" height="1951" alt="The AV Downloader main screen: a Data used bar, a Link on chip, a Share all row and three finished downloads." fetchpriority="high">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Marquee -->
+    <div class="marquee-wrap">
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__track">
+          <span>COPY A LINK <b>*</b> TAP THE BUBBLE <b>*</b> AUDIO AND VIDEO <b>*</b> READER VIEW <b>*</b> CANCEL FROM THE NOTIFICATION <b>*</b> SIGN IN ONLY WHEN ASKED <b>*</b> ZERO TRACKING <b>*</b> SELF-UPDATE <b>*</b> </span>
+          <span>COPY A LINK <b>*</b> TAP THE BUBBLE <b>*</b> AUDIO AND VIDEO <b>*</b> READER VIEW <b>*</b> CANCEL FROM THE NOTIFICATION <b>*</b> SIGN IN ONLY WHEN ASKED <b>*</b> ZERO TRACKING <b>*</b> SELF-UPDATE <b>*</b> </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feature split A: the list -->
+    <section class="section section--feature-a" id="feature-a">
+      <div class="wrap">
+        <div class="feature-a">
+          <div class="feature-a__copy reveal">
+            <span class="ghost-num" aria-hidden="true">01</span>
+            <h2>Every post,<br>one list.</h2>
+            <p class="lead">Finished posts land here with a thumbnail, a size, a date and three ways to send them.</p>
+            <p class="body">No gallery digging. No file manager archaeology. The list is the whole app.</p>
+
+            <dl class="stats">
+              <div><dt>Tap</dt><dd>1</dd></div>
+              <div><dt>Account</dt><dd>None</dd></div>
+              <div><dt>Ads</dt><dd>None</dd></div>
+            </dl>
+
+            <p class="note note--inline">Delete lives in the storage row. It asks before it removes anything.</p>
+          </div>
+
+          <div class="feature-a__art reveal">
+            <span class="big-time" aria-hidden="true">1 MB</span>
+            <figure class="stat-card">
+              <img src="assets/img/feature-a-card.webp" width="1148" height="877" alt="A close crop of the Downloads list: the Share all row with WhatsApp, share and Telegram buttons above one full post card." loading="lazy">
+              <figcaption class="sr-only">The list that carries every finished post.</figcaption>
+            </figure>
+            <div class="hand hand--card">
+              <svg class="doodle" viewBox="0 0 110 70" aria-hidden="true">
+                <path d="M6 58c20-10 38-26 48-45" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+                <path d="M46 9c3 1 6 2 9 5M52 19c1-3 2-6 3-10" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+              </svg>
+              <span>three ways out</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feature split B: the share all queue -->
+    <section class="section section--feature-b" id="feature-b">
+      <div class="wrap">
+        <div class="feature-b">
+          <div class="feature-b__art reveal">
+            <div class="feature-b__phone feature-b__phone--board">
+              <div class="phone">
+                <div class="phone__screen">
+                  <img src="assets/img/feature-b-one.webp" width="760" height="1104" alt="The top of the main screen: Data used, the Link on chip, the Downloads list and the first finished post." loading="lazy">
+                </div>
+              </div>
+              <span class="tag tag--one">The list</span>
+            </div>
+            <div class="feature-b__phone feature-b__phone--drop">
+              <div class="phone">
+                <div class="phone__screen">
+                  <img src="assets/img/feature-b-two.webp" width="760" height="1104" alt="The Share all preview for a middle post: a large thumbnail, the title, the link, Cancel and Next buttons and one big Share button." loading="lazy">
+                </div>
+              </div>
+              <span class="tag tag--two">The queue</span>
+            </div>
+          </div>
+
+          <div class="feature-b__copy reveal">
+            <span class="ghost-num" aria-hidden="true">02</span>
+            <h2>One queue.<br>Oldest first.</h2>
+            <p class="lead">Share all walks the list one post at a time, starting with the oldest.</p>
+            <p class="body">Each post gets a full-screen preview with Share, Skip and Cancel. After the last one it asks about deleting.</p>
+
+            <ul class="legend">
+              <li><span class="legend__dot legend__dot--one" aria-hidden="true"></span><strong>The list</strong><span>Every finished post</span></li>
+              <li><span class="legend__dot legend__dot--two" aria-hidden="true"></span><strong>The queue</strong><span>Share, skip, cancel</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Deep panel: the bubble -->
+    <section class="section section--bubble" id="bubble">
+      <div class="wrap">
+        <div class="bubble-panel reveal">
+          <div class="bubble-panel__copy">
+            <span class="pill pill--accent">the part that follows you</span>
+            <h2>Three seconds.<br>Then it is gone.</h2>
+            <p class="lead lead--light">Copy a link in any app and a small teal bubble appears at the edge of the screen.</p>
+
+            <ul class="ticks ticks--light">
+              <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-arrows-out-cardinal"></use></svg> It appears the moment you copy a link</li>
+              <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-clock"></use></svg> Its outline drains over three seconds</li>
+              <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-x"></use></svg> Drag it, or drop it on the X</li>
+            </ul>
+
+            <p class="bubble-panel__foot">A new copy restarts the countdown.</p>
+          </div>
+
+          <div class="bubble-stage" id="bubble-stage">
+            <div class="bubble-stage__phone">
+              <div class="phone phone--tilt">
+                <div class="phone__screen">
+                  <img src="assets/img/dark-stage.webp" width="820" height="1105" alt="The Downloads list with the Share all row and three finished posts, one per colour thumbnail." loading="lazy">
+                </div>
+              </div>
+            </div>
+            <p class="bubble-stage__caption">over your home screen</p>
+
+            <button class="prop-bubble" id="prop-bubble" type="button">
+              <span class="prop-bubble__mark"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-download-simple"></use></svg></span>
+              <span class="prop-bubble__text"><b>AV Downloader</b><em>copy, tap, sent</em></span>
+              <span class="prop-bubble__drain" aria-hidden="true"></span>
+              <span class="sr-only">Drag it around, or use the hide button.</span>
+            </button>
+            <span class="bubble-hint" id="bubble-hint" aria-hidden="true">drag it</span>
+
+            <button class="bubble-hide" id="bubble-hide" type="button" aria-label="Drop to hide the floating bubble">
+              <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-x"></use></svg>
+              <span>drop to hide</span>
+            </button>
+
+            <button class="bubble-restore" id="bubble-restore" type="button" hidden>Bring it back</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proof cards -->
+    <section class="section section--notifs" id="proof">
+      <div class="wrap">
+        <div class="notifs">
+          <div class="notifs__copy reveal">
+            <span class="ghost-num" aria-hidden="true">03</span>
+            <h2>Two surfaces.<br>Both real.</h2>
+            <p class="lead">The sign-in card asks only when a site blocks a download. The storage row keeps the Delete button.</p>
+            <p class="body">Neither one is a drawing. Both are screenshots from the build you install.</p>
+
+            <ul class="ticks">
+              <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-arrow-up-right"></use></svg> The card loads the site's own page</li>
+              <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-lock-simple"></use></svg> The password goes into that page, not the app</li>
+              <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-x"></use></svg> Delete asks before it removes anything</li>
+            </ul>
+          </div>
+
+          <div class="notifs__art reveal">
+            <figure class="notif notif--big">
+              <img src="assets/img/proof-large.webp" width="1060" height="962" alt="The sign-in card for Reddit over the main screen, with the site's own Log In page and a close button." loading="lazy">
+              <figcaption><span class="notif__dot" aria-hidden="true"></span> The sign-in card <span class="notif__muted">about 70 percent of the screen</span></figcaption>
+            </figure>
+
+            <figure class="notif notif--small">
+              <img src="assets/img/proof-small.webp" width="1085" height="195" alt="The storage row: Data used, 1 MB, and a Delete button on the right." loading="lazy">
+              <figcaption><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-download-simple"></use></svg> The storage row <span class="notif__muted">delete when you like</span></figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Three-up strip -->
+    <section class="section section--maps">
+      <div class="wrap">
+        <div class="maps__head reveal">
+          <h2>Three screens. <br>No tour.</h2>
+          <p class="lead">The list where posts land, the queue that sends them, and the sites you signed in to.</p>
+        </div>
+
+        <div class="maps__strip reveal" tabindex="0" role="group" aria-label="Three app views">
+          <figure class="map-card map-card--one">
+            <div class="map-card__img">
+              <img src="assets/img/strip-one.webp" width="760" height="760" alt="The Downloads heading, the Share all row and two finished posts." loading="lazy">
+            </div>
+            <figcaption><span>01</span> The list <em>newest first</em></figcaption>
+          </figure>
+
+          <figure class="map-card map-card--two">
+            <div class="map-card__img">
+              <img src="assets/img/strip-two.webp" width="760" height="760" alt="A Share all preview with the post title, the link and the share controls." loading="lazy">
+            </div>
+            <figcaption><span>02</span> The queue <em>share, skip, cancel</em></figcaption>
+          </figure>
+
+          <figure class="map-card map-card--three">
+            <div class="map-card__img">
+              <img src="assets/img/strip-three.webp" width="760" height="760" alt="The Logged in websites list with Reddit, YouTube and a third site, each with a Sign out button." loading="lazy">
+            </div>
+            <figcaption><span>03</span> The sites <em>sign out per site</em></figcaption>
+          </figure>
+        </div>
+
+        <p class="maps__foot reveal">All three are the installed app, not a mockup.</p>
+      </div>
+    </section>
+
+    <!-- Setup -->
+    <section class="section section--setup" id="setup">
+      <div class="wrap">
+        <div class="setup">
+          <div class="setup__copy reveal">
+            <span class="ghost-num" aria-hidden="true">04</span>
+            <h2>The first open,<br>in three steps.</h2>
+            <p class="lead">Turn on the accessibility service and the overlay permission, copy a link, and answer only if a site asks you to sign in.</p>
+
+            <ol class="steps">
+              <li><span>01</span><div><strong>Allow accessibility and overlays</strong><p>The service notices a copy action. The overlay draws the bubble.</p></div></li>
+              <li><span>02</span><div><strong>Copy a link in any app</strong><p>Share, Copy link, or a plain copy. The bubble shows up either way.</p></div></li>
+              <li><span>03</span><div><strong>Sign in only if asked</strong><p>A blocked site opens its own sign-in page. The session stays on the phone.</p></div></li>
+            </ol>
+
+            <div class="setup__actions">
+              <a class="link-chip" href="privacy.html">
+                <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-shield-check"></use></svg>
+                <span>Read the privacy page</span>
+              </a>
+              <button class="arrow-link arrow-link--button" type="button" id="open-detail">
+                See the sites screen <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-arrow-right"></use></svg>
+              </button>
+            </div>
+
+            <p class="note note--inline">The accessibility service notices a copy and reads the clipboard. That is its whole job.</p>
+          </div>
+
+          <div class="setup__art reveal">
+            <div class="phone phone--setup">
+              <div class="phone__screen">
+                <img src="assets/img/setup-screen.webp" width="900" height="1275" alt="The sign-in card open over the main screen, showing Reddit's Log In page with phone, Google and email options." loading="lazy">
+              </div>
+            </div>
+            <div class="setup__privacy">
+              <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-shield-check"></use></svg>
+              <div class="setup__privacy-copy">
+                <strong>Stays on your phone.</strong>
+                <ul class="setup__privacy-list">
+                  <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-lock-simple"></use></svg><span>Sessions are encrypted on this phone.</span></li>
+                  <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-eye-slash"></use></svg><span>No analytics. No ads. No tracking.</span></li>
+                  <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-map-pin"></use></svg><span>No location permission.</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bento -->
+    <section class="section section--bento">
+      <div class="wrap">
+        <div class="bento__head reveal">
+          <h2>Six things it does.<br>No settings maze.</h2>
+          <p class="lead">Audio, video, a reader view, a quiet notification, zero tracking and an update that installs itself.</p>
+        </div>
+
+        <div class="bento">
+          <article class="bento__card bento__card--coffee reveal">
+            <div class="bento__art bento__art--coffee">
+              <img src="assets/ill/coffee.svg" width="1000" height="880" alt="" loading="lazy">
+            </div>
+            <div class="bento__copy">
+              <h3>Audio or video</h3>
+              <p>Best audio as mp3, best video as mp4.</p>
+            </div>
+          </article>
+
+          <article class="bento__card bento__card--background reveal">
+            <div class="bento__copy">
+              <h3>Reader view</h3>
+              <p>The article arrives without ads, banners or sidebars.</p>
+            </div>
+            <div class="bento__art bento__art--map">
+              <img src="assets/ill/freelancer.svg" width="1000" height="880" alt="" loading="lazy">
+            </div>
+          </article>
+
+          <article class="bento__card bento__card--bubble reveal">
+            <span class="bento__icon"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-download-simple"></use></svg></span>
+            <div class="bento__copy">
+              <h3>Self-update</h3>
+              <p>It checks GitHub, downloads, and Android asks to install.</p>
+            </div>
+          </article>
+
+          <article class="bento__card bento__card--silent reveal">
+            <span class="bento__icon"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-bell-simple-slash"></use></svg></span>
+            <div class="bento__copy">
+              <h3>Cancel from the notification</h3>
+              <p>Progress, a percentage and one Cancel button.</p>
+            </div>
+          </article>
+
+          <article class="bento__card bento__card--privacy reveal">
+            <span class="bento__icon"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-eye-slash"></use></svg></span>
+            <div class="bento__copy">
+              <h3>Zero tracking</h3>
+              <p>No analytics, no ads, no crash reporting.</p>
+            </div>
+          </article>
+
+          <article class="bento__card bento__card--cadence reveal">
+            <div class="bento__copy">
+              <h3>Your formats</h3>
+              <p>Whatever the link holds.</p>
+            </div>
+            <div class="cadence" aria-label="File types shown in the app: mp3, mp4 and png">
+              <span>mp3</span><span>mp4</span><span>png</span>
+            </div>
+            <svg class="icon bento__gauge" aria-hidden="true"><use href="assets/icons.svg#i-gauge"></use></svg>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Closing CTA -->
+    <section class="section section--cta" id="install">
+      <div class="wrap">
+        <div class="cta">
+          <div class="cta__copy reveal">
+            <h2>It is here.<br>Sideload only.</h2>
+            <p class="lead">Android 8 and later. One direct APK. Not on the Play Store, no account, no newsletter popup.</p>
+            <div class="cta__actions">
+              <a class="btn btn--navy" href="https://github.com/mumayank/av-downloader-releases/releases/latest">
+                <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-download-simple"></use></svg>
+                Install now
+              </a>
+              <span class="cta__aside">A sideload tool, made for one phone.</span>
+            </div>
+            <ol class="install-steps">
+              <li><span>01</span><div><strong>Download the APK</strong> from the releases page.</div></li>
+              <li><span>02</span><div><strong>Allow the install</strong> when Android asks about this source.</div></li>
+              <li><span>03</span><div><strong>Open it once</strong> and walk through the permission screen.</div></li>
+            </ol>
+            <p class="install-note">Android may scan the APK because it has not seen the app before. If Play Protect blocks the install, allow it for AV Downloader in the Play Store settings and tap Update again inside the app.</p>
+          </div>
+
+          <div class="cta__art reveal">
+            <div class="ticket" aria-label="AV Downloader install pass, Android, available now">
+              <div class="ticket__main">
+                <p class="ticket__kicker">Install pass</p>
+                <p class="ticket__brand">AV Downloader</p>
+                <p class="ticket__route">Android <span aria-hidden="true">/</span> 3.1.4</p>
+                <div class="ticket__row"><span>Seq</span><strong>001</strong></div>
+                <div class="ticket__row"><span>Ready</span><strong>Now</strong></div>
+                <p class="ticket__link">mumayank / av-downloader</p>
+              </div>
+              <div class="ticket__stub">
+                <div class="barcode" aria-hidden="true">
+                  <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+                </div>
+                <span class="ticket__stamp">Install</span>
+                <span class="ticket__small">Keep this page.<br>Or don't.</span>
+              </div>
+            </div>
+
+            <div class="cta__person">
+              <img src="assets/ill/freelancer.svg" width="1000" height="880" alt="" loading="lazy">
+            </div>
+            <div class="note note--cta">one apk.<br>that is all.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <dialog class="detail-dialog" id="detail-dialog" aria-labelledby="detail-dialog-title">
+      <div class="detail-dialog__panel">
+        <div class="detail-dialog__head">
+          <div><h2 id="detail-dialog-title">Logged in websites</h2><p class="detail-dialog__sub">Every site you signed in, when you signed in, and a Sign out button for each.</p></div>
+          <button class="detail-dialog__close" type="button" data-close aria-label="Close the detail">
+            <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-x"></use></svg>
+          </button>
+        </div>
+        <div class="detail-dialog__body">
+          <img src="assets/img/detail-screen.webp" width="760" height="988" alt="The Logged in websites screen listing Reddit, YouTube and one more site, each with a sign-in date and a Sign out button.">
+        </div>
+      </div>
+    </dialog>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <div class="footer__start">
+        <a class="brand brand--footer" href="#top" aria-label="AV Downloader, back to top">
+          <span class="brand__mark"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#i-download-simple"></use></svg></span>
+          <span class="brand__name">AV Downloader</span>
+        </a>
+        <p>Copy, tap, sent.</p>
+      </div>
+      <p class="footer__credit">by mumayank</p>
+      <p class="footer__small">Android 8 and later. <a href="privacy.html">Privacy policy</a>. <a href="THIRD_PARTY_NOTICES.md">Notices</a>.</p>
+    </div>
+  </footer>
+
+  <script src="script.js?v=1" defer></script>
+</body>
 </html>
